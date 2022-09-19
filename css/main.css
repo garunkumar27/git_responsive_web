@@ -1969,6 +1969,31 @@ h6 {
 		color: #8e8a8a;
 
 	}
+	/* FEATURES 3 */
+	.fea3{
+		width: 90%;
+		padding-top: 8%;
+		margin: auto;
+	}
+	.fea3_header{
+		text-align: center;
+		width: 100%;
+		margin: auto;
+	}
+	.fea3_header h4{
+		color: #012970;
+		font-size: 30px;
+	}
+	.fea3_cont{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.fea3_pic{
+		width: 30%;
+	}
+	.fea3_whdetail{
+		
+	}
 
 }
 
