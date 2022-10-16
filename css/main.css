@@ -35,15 +35,16 @@ h6 {
 
 .nav_header {
 	display: flex;
-	width: 40%;
+	justify-content: space-around;
+	width: 20%;
 	margin: auto;
-	padding: 3%;
+	/* padding: 3%; */
 }
 
-.nav_line {
-	max-width: 50%;
-	max-height: 40px;
-	margin-top: 8px;
+.nav_line img{
+	width: 26px;
+	display: inline-block;
+	padding-left: 10%;
 }
 
 .nav_head h2 {
@@ -119,11 +120,13 @@ h6 {
 	margin-top: 20px;
 }
 
-.banner_but {
+/* .banner_but {
 	position: relative;
 	display: flex;
 	justify-content: center;
-}
+	align-items: center;
+
+} */
 
 .banner_cont button {
 	padding: 4% 10%;
@@ -133,15 +136,6 @@ h6 {
 	font-size: 16px;
 	color: #fff;
 	border-radius: 5%;
-}
-
-.banner_icon {
-	font-size: 20px;
-	position: absolute;
-	margin: auto;
-	color: #fff;
-	left: 70%;
-	top: 50%;
 
 }
 
@@ -186,13 +180,6 @@ h6 {
 	color: #012970;
 }
 
-.who_but {
-	/* display: flex; */
-	text-align: center;
-	align-items: center;
-	position: relative;
-}
-
 .who_but button {
 	padding: 3% 8%;
 	margin-top: 20px;
@@ -201,11 +188,6 @@ h6 {
 	font-size: 18px;
 	color: #fff;
 	border-radius: 5%;
-}
-
-.who_icon {
-	font-size: 20px;
-	position: absolute;
 }
 
 .who_pic {
@@ -1040,6 +1022,7 @@ h6 {
 	width: 80%;
 	padding-top: 40px;
 	position: relative;
+	z-index: 1;
 }
 
 .team_ico_cont1,
@@ -1048,11 +1031,13 @@ h6 {
 .team_ico_cont4 {
 	position: absolute;
 	right: 0;
-	top: 5%;
+	opacity: 0;
+	top: 8%;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	background-color: rgba(177, 161, 161, 0.2);
-	opacity: 0;
+	z-index: 2;
 
 }
 
@@ -1064,10 +1049,10 @@ h6 {
 	font-size: 21px;
 }
 
-.team_cont1:hover team_ico_cont1,
-.team_cont1:hover team_ico_cont2,
-.team_cont1:hover team_ico_cont3,
-.team_cont1:hover team_ico_cont4 {
+.team_cont1:hover .team_ico_cont1,
+.team_cont2:hover .team_ico_cont2,
+.team_cont3:hover .team_ico_cont3,
+.team_cont4:hover .team_ico_cont4 {
 	opacity: 1;
 	transition: 2s all;
 	margin-right: 10px;
@@ -1292,15 +1277,14 @@ h6 {
 
 	.nav_header {
 		display: flex;
-		width: 40%;
+		width: 20%;
 		margin: auto;
 		padding: 3%;
 
 	}
 
 	.nav_line {
-		max-width: 20%;
-		margin-top: 8px;
+		width: 26px;
 	}
 
 	.nav_head h2 {
@@ -1376,11 +1360,12 @@ h6 {
 		margin-top: 20px;
 	}
 
-	.banner_but {
+	/* .banner_but {
 		position: relative;
 		display: flex;
 		justify-content: center;
-	}
+		align-items: center;
+	} */
 
 	.banner_cont button {
 		padding: 4% 10%;
@@ -1442,13 +1427,6 @@ h6 {
 		color: #012970;
 	}
 
-	.who_but {
-		/* display: flex; */
-		text-align: center;
-		align-items: center;
-		position: relative;
-	}
-
 	.who_but button {
 		padding: 3% 8%;
 		margin-top: 20px;
@@ -1457,11 +1435,6 @@ h6 {
 		font-size: 18px;
 		color: #fff;
 		border-radius: 5%;
-	}
-
-	.who_icon {
-		font-size: 20px;
-		position: absolute;
 	}
 
 	.who_pic {
@@ -2687,6 +2660,7 @@ h6 {
 	.team_cont4 {
 		width: 40%;
 		position: relative;
+		z-index: 1;
 	}
 
 	.team_ico_cont1,
@@ -2695,11 +2669,13 @@ h6 {
 	.team_ico_cont4 {
 		position: absolute;
 		right: 0;
-		top: 5%;
+		opacity: 0;
+		top: 8%;
+		border-radius: 5px;
 		display: flex;
 		flex-direction: column;
 		background-color: rgba(177, 161, 161, 0.2);
-		opacity: 0;
+		z-index: 2;
 
 	}
 
@@ -2711,10 +2687,10 @@ h6 {
 		font-size: 21px;
 	}
 
-	.team_cont1:hover team_ico_cont1,
-	.team_cont1:hover team_ico_cont2,
-	.team_cont1:hover team_ico_cont3,
-	.team_cont1:hover team_ico_cont4 {
+	.team_cont1:hover .team_ico_cont1,
+	.team_cont2:hover .team_ico_cont2,
+	.team_cont3:hover .team_ico_cont3,
+	.team_cont4:hover .team_ico_cont4 {
 		opacity: 1;
 		transition: 2s all;
 		margin-right: 10px;
@@ -3008,7 +2984,7 @@ h6 {
 
 	.nav_header {
 		/* display: flex; */
-		width: 40%;
+		width: 20%;
 		margin: auto;
 		padding: 3%;
 
@@ -3020,10 +2996,9 @@ h6 {
 		background-color: aqua;
 	}
 
-	/* .nav_line i{
-		font-size: 20px;
-		margin-top: 8px;
-	} */
+	.nav_line{
+		width: 26px;
+	}
 	.nav_head h2 {
 		width: 100%;
 		margin: 3px 0px 0px 5px;
@@ -3096,10 +3071,12 @@ h6 {
 		width: 50%;
 	}
 
-	.banner_but {
+	/* .banner_but {
 		position: relative;
 		display: flex;
-	}
+		justify-content: center;
+		align-items: center;
+	} */
 
 	.banner_cont button {
 		padding: 4% 10%;
@@ -3163,11 +3140,6 @@ h6 {
 		color: #012970;
 	}
 
-	.who_but {
-		display: flex;
-		position: relative;
-	}
-
 	.who_but button {
 		padding: 4% 10%;
 		margin-top: 20px;
@@ -3176,11 +3148,6 @@ h6 {
 		font-size: 16px;
 		color: #fff;
 		border-radius: 5%;
-	}
-
-	.who_icon {
-		font-size: 20px;
-		position: absolute;
 	}
 
 	.who_pic {
@@ -4005,6 +3972,7 @@ h6 {
 	.team_cont4 {
 		width: 22%;
 		position: relative;
+		z-index: 2;
 	}
 
 	.team_ico_cont1,
@@ -4013,11 +3981,13 @@ h6 {
 	.team_ico_cont4 {
 		position: absolute;
 		right: 0;
-		top: 5%;
+		opacity: 0;
+		top: 8%;
+		border-radius: 5px;
 		display: flex;
 		flex-direction: column;
 		background-color: rgba(177, 161, 161, 0.2);
-		opacity: 0;
+		z-index: 2;
 
 	}
 
@@ -4029,10 +3999,10 @@ h6 {
 		font-size: 21px;
 	}
 
-	.team_cont1:hover team_ico_cont1,
-	.team_cont1:hover team_ico_cont2,
-	.team_cont1:hover team_ico_cont3,
-	.team_cont1:hover team_ico_cont4 {
+	.team_cont1:hover .team_ico_cont1,
+	.team_cont1:hover .team_ico_cont2,
+	.team_cont1:hover .team_ico_cont3,
+	.team_cont1:hover .team_ico_cont4 {
 		opacity: 1;
 		transition: 2s all;
 		margin-right: 10px;
@@ -4361,15 +4331,14 @@ h6 {
 
 	.nav_header {
 		display: flex;
-		width: 30%;
+		width: 20%;
 		margin: auto;
 		padding: 3%;
 
 	}
 
 	.nav_line {
-		max-width: 20%;
-		margin-top: 8px;
+		width: 26px;
 	}
 
 	.nav_head h2 {
@@ -4443,11 +4412,11 @@ h6 {
 		width: 50%;
 	}
 
-	.banner_but {
+	/* .banner_but {
 		position: relative;
 		display: flex;
 		justify-content: left;
-	}
+	} */
 
 	.banner_cont button {
 		padding: 4% 10%;
@@ -4459,14 +4428,6 @@ h6 {
 		border-radius: 5%;
 	}
 
-	.banner_icon {
-		font-size: 20px;
-		position: absolute;
-		color: #fff;
-		left: 28%;
-		top: 50%;
-
-	}
 
 	/* WHO WE ARE */
 	.who_we {
@@ -4511,11 +4472,6 @@ h6 {
 		color: #012970;
 	}
 
-	.who_but {
-		display: flex;
-		position: relative;
-	}
-
 	.who_but button {
 		padding: 4% 10%;
 		margin-top: 20px;
@@ -4524,11 +4480,6 @@ h6 {
 		font-size: 16px;
 		color: #fff;
 		border-radius: 5%;
-	}
-
-	.who_icon {
-		font-size: 20px;
-		position: absolute;
 	}
 
 	.who_pic {
@@ -4849,6 +4800,26 @@ h6 {
 	.fea3_subcont p {
 		color: #8e8a8a;
 		font-size: 17px;
+	}
+	/* Pricing Page-6 */
+	.pricing{
+		width: 90%;
+		margin: auto;
+	}
+	.price_head{
+		color: #012970;
+		padding-bottom: 10px;
+		font-size: 35px;
+	}
+	.pricing_cont{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.pricing_img1{
+		width: 70%;
+	}
+	.pricing_cont1 img{
+		padding:30px,40px;
 	}
 
 	/* SERVICES */
@@ -5352,6 +5323,7 @@ h6 {
 	.team_cont4 {
 		width: 22%;
 		position: relative;
+		z-index: 1;
 	}
 
 	.team_ico_cont1,
@@ -5360,11 +5332,13 @@ h6 {
 	.team_ico_cont4 {
 		position: absolute;
 		right: 0;
-		top: 5%;
+		top: 8%;
+		border-radius: 5px;
+		opacity: 0;
 		display: flex;
 		flex-direction: column;
 		background-color: rgba(177, 161, 161, 0.2);
-		opacity: 0;
+		z-index: 2;
 
 	}
 
@@ -5376,10 +5350,10 @@ h6 {
 		font-size: 21px;
 	}
 
-	.team_cont1:hover team_ico_cont1,
-	.team_cont1:hover team_ico_cont2,
-	.team_cont1:hover team_ico_cont3,
-	.team_cont1:hover team_ico_cont4 {
+	.team_cont1:hover .team_ico_cont1,
+	.team_cont2:hover .team_ico_cont2,
+	.team_cont3:hover .team_ico_cont3,
+	.team_cont4:hover .team_ico_cont4 {
 		opacity: 1;
 		transition: 2s all;
 		margin-right: 10px;
@@ -5619,7 +5593,7 @@ h6 {
 /*
 .drop-down1{
 	position: absolute;
-	right: 7%;
+	right: 8%;
 	top: 2%;
 	display:block;
 	transition: 2s;
